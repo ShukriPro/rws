@@ -1,0 +1,16 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="20dp" app:cardBackgroundColor="#FBFBFB" android:layout_margin="10dp" android:id="@+id/weatherResultCard">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp">
+        <TextView android:id="@+id/weatherResultCardTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="25sp" android:textColor="#818181" android:text="Title"/>
+        <TextView android:id="@+id/weatherResultCardDateCreated" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:textColor="#818181" android:text="Date Created"/>
+        <TextView android:id="@+id/weatherResultCardWeatherState" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:textColor="#818181" android:text="Weather State"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="top" android:paddingTop="10dp">
+            <ImageView android:id="@+id/weatherResultCardWeatherStateImage" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/c"/>
+            <TextView android:id="@+id/weatherResultCardTheTempText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="35sp" android:textColor="#000000" android:textStyle="bold" android:layout_gravity="center_vertical" android:text="12" android:layout_marginLeft="15dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#595858" android:textSize="20dp" android:text="˚C" android:layout_marginLeft="5dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:layout_marginLeft="10dp" android:layout_gravity="bottom">
+                <TextView android:id="@+id/weatherResultCardHumidity" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15sp" android:textColor="#818181" android:text="Humidity" android:layout_marginLeft="15dp"/>
+                <TextView android:id="@+id/weatherResultCardWindSpeed" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="15sp" android:textColor="#818181" android:text="Wind Speed" android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
